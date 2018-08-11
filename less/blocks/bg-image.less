@@ -1,0 +1,53 @@
+.bg-image {
+    min-width: 20rem;
+    max-width: 120rem;
+    background-image: url('../assets/images/bridgeJPG.jpg');
+    background-position: bottom;
+    padding-top: 53rem;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background: linear-gradient(-360deg, rgba(174, 23, 23, 1) 0%, rgba(174, 23, 23, 0) 100%);
+        width: 100%;
+        bottom: 0;
+        height: 20rem;
+    }
+
+    &__title {
+        position: absolute;
+        top: 0;
+        line-height: 1.2;
+        text-transform: uppercase;
+        max-width: 35rem;
+        color: #fff;
+        font-family: @font-roboto-condensed-bold;
+        
+        @media screen and (min-width: 320px) {
+            transform: translate(30%, 50%);
+            font-size: 2.375rem;
+            max-width: 15rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            font-size: 3.375rem;
+            max-width: 25rem;
+        }
+
+        @media screen and (min-width: 992px) {
+            transform: translate(74.5%, 69%);
+            font-size: 4.375rem;
+            max-width: 35rem;
+        }
+    }
+
+    &__title-defis {
+        margin-left: 1rem;
+    }
+
+    &__title-is {
+        font-family: @font-roboto-condensed-light;
+    }
+}

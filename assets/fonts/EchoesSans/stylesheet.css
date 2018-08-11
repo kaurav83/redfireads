@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Echoes Sans';
+    src: url('EchoesSans.eot');
+    src: url('EchoesSans.eot?#iefix') format('embedded-opentype'),
+        url('EchoesSans.woff2') format('woff2'),
+        url('EchoesSans.woff') format('woff'),
+        url('EchoesSans.ttf') format('truetype'),
+        url('EchoesSans.svg#EchoesSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

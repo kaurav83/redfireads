@@ -1,0 +1,69 @@
+.review {
+    margin: 0 2.5rem;
+    margin-top: 6rem;
+    &__container {
+        display: flex;
+        margin-left: .6rem;
+
+        @media screen and (min-width: 320px) {
+            flex-wrap: wrap;
+        }
+        
+        @media screen and (min-width: 992px) {
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__description {
+        margin-right: 4rem;
+        @media screen and (min-width: 320px) {
+            margin-right: 0;
+        }
+
+        @media screen and (min-width: 992px) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__title-is {
+        margin-top: .5rem;
+    }
+
+    &__paragraph {
+        font-size: 1rem;
+        font-family: @font-open-sans-regular;
+        margin-top: 2rem;
+    }
+
+    &__paragraph-content {
+        margin-top: 1.5625rem;
+        line-height: 1.1;
+
+        &--inner {
+            line-height: 1.2;
+        }
+    }
+
+    &__bold-word {
+        font-family: @font-open-sans-bold;
+    }
+
+    &__image-block {
+        margin-top: .5rem;
+    }
+
+    &__image {
+        @media screen and (min-width: 320px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: auto;
+        }
+    }
+
+    &__button {
+        margin-top: 4.2rem;
+        margin-left: .7rem;
+    }
+}

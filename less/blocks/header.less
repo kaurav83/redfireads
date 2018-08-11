@@ -1,0 +1,195 @@
+.header {
+    padding: 0 2.625rem;
+    position: relative;
+    margin-bottom: -1px;
+    &__fonts-title, &__colors-title {
+        font-size: 1.25rem;
+        font-family: @font-roboto-bold;
+        color: #233147;
+    }
+
+    &__logo {
+        margin-left: .5rem;
+    }
+
+    &__pannel {
+        display: flex;
+        align-items: center;
+        margin-top: 1.7rem;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 1rem;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__fonts {
+        width: 34%;
+        align-self: flex-start;
+
+        @media screen and (min-width: 320px) {
+            margin-left: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 4rem;
+        }
+    }
+
+    &__colors {
+        align-self: flex-start;
+        width: 23%;
+
+        @media screen and (min-width: 320px) {
+            margin-left: 0;
+            align-self: flex-start;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-left: 1rem;
+        }
+    }
+
+    &__colors-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    &__colors-item {
+        flex: 1 1 40%;
+        margin-bottom: 1rem;
+    }
+
+    &__colors-circle {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        // line-height: 100px;
+        background: #ccc;
+        text-align: center;
+        &:after {
+            transform: translate(50%, 50%);
+            display: block;
+            margin-left: 3.5rem;
+            font-family: @font-roboto-medium;
+            font-size: .875rem;
+            color: #363b3f;
+        }
+        &--tomato {
+            background: @main-color;
+            &:after {
+                content: 'fa3821';
+            }
+        }
+
+        &--black {
+            background: #000;
+            &:after {
+                content: '000000';
+            }
+        }
+
+        &--gray {
+            background: #474747;
+            &:after {
+                content: '474747';
+            }
+        }
+
+        &--white {
+            background: #fff;
+            border: .0625rem solid #eee;
+            &:after {
+                content: 'ffffff';
+            }
+        }
+    }
+
+    &__fonts-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+        }
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    &__fonts-item {
+        flex: 1 1 40%;
+        margin-bottom: 1rem;
+        min-width: 10rem;
+    }
+
+    &__fonts-echoes {
+        font-family: @font-echoes; 
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__fonts-open-sans-bold {
+        font-family: @font-open-sans-bold; 
+        font-size: 1rem;
+    }
+
+    &__fonts-quicksand-bold {
+        font-family: @font-quicksand-bold; 
+        font-size: .875rem;
+    }
+
+    &__fonts-open-sans-regular {
+        font-family: @font-open-sans-regular; 
+        font-size: .875rem;
+    }
+
+    &__fonts-quicksand-regular {
+        font-family: @font-quicksand-regular;
+        font-size: .75rem;
+    }
+
+    &__button-redirect {
+        position: absolute;
+        right: 2.6rem;
+        bottom: 0;
+    }
+
+    &__hr {
+        border-bottom: .0625rem solid #000;
+        position: absolute;
+        top: 100%;
+        width: 74%;
+        transform: translateY(100%);
+
+        @media screen and (min-width: 320px) {
+            right: 50%;
+            transform: translateX(50%);
+            bottom: -5%;
+        }
+
+        @media screen and (min-width: 768px) {
+            right: auto;
+            transform: translateX(0%);
+            bottom: -.5rem;
+            margin-left: .5rem;
+        }
+    }
+}
